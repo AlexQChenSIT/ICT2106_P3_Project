@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ICT2106_P3_Project
 For lab group P3's project integration repository
 
@@ -29,3 +30,7 @@ password: 1234
 Sample Volunteer
 username: testVolunteer
 password: 1234
+=======
+# ICT2106_P3-5
+This is the beginning of the repo
+>>>>>>> cf617ac (Resource Request and  Feedback feature implemented)

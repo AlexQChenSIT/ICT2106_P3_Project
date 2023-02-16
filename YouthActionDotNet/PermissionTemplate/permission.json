@@ -70,7 +70,14 @@
     "Delete": true
   },
   {
-    "Module": "Sample",
+    "Module": "Request",
+    "Create": true,
+    "Read": true,
+    "Update": true,
+    "Delete": true
+  },
+  {
+    "Module": "Feedback",
     "Create": true,
     "Read": true,
     "Update": true,

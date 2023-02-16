@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YouthActionDotNet.Data;
 
@@ -10,9 +11,11 @@ using YouthActionDotNet.Data;
 namespace YouthActionDotNet.Migrations
 {
     [DbContext(typeof(DBContext))]
-    partial class DBContextModelSnapshot : ModelSnapshot
+    [Migration("20230202040333_Request")]
+    partial class Request
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.1");
@@ -205,6 +208,9 @@ namespace YouthActionDotNet.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("RegionalDirectorId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RegionalDirectorName")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ServiceCenterAddress")
