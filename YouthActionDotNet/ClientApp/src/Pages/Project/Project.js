@@ -2,8 +2,6 @@
 import React from "react"
 import { Loading } from "../../Components/appCommon"
 import DatapageLayout from "../PageLayout"
-import { Select } from '@chakra-ui/react'
-
 
 export default class Project extends React.Component {
     state={
@@ -137,9 +135,6 @@ export default class Project extends React.Component {
                 >
                     
             </DatapageLayout>
-
-
-
             )
         }
     }

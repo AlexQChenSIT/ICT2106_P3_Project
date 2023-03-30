@@ -201,24 +201,22 @@ export default class Volunteer extends React.Component {
                         
                         return(
                             <div className="volunteer-extended">
-                                <StdButton key={index} className={"secondary"} onClick={()=>{
+                                <StdButton key={index} style={"btn-error"} onClick={()=>{
                                     this.handleRevoke(item.UserId)
                                 }}>Revoke</StdButton>
                             </div>
                         )
-                    }
-                    else if(item.ApprovalStatus === "Pending"){
+                    }else if(item.ApprovalStatus === "Pending"){
                         
                         
                         return (
                             <div className="volunteer-extended">
-                                <StdButton key={index} onClick={()=>{
+                                <StdButton key={index} style={"btn-success"} onClick={()=>{
                                     this.handleApprove(item.UserId, this.props.user.data)
                                 }}>Approve</StdButton>
                             </div>
                         )
-                    }
-                    else{
+                    }else{
                         return null;
                     }
                 })}
