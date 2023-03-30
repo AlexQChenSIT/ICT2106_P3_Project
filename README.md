@@ -13,7 +13,7 @@ dotnet run
 # MODULE 1 TEAM 6
 
 Sample Donor
-username: testDonor  
+username: donorA  
 password: 1234  
 
 Sample Admin
